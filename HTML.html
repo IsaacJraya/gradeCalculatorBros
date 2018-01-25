@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradeCalculator</title>
+    <script src="Script.js"></script>
+    <Link rel="stylesheet" href="Stile.css"/>
+
+</head>
+<body>
+<div id="content">
+
+    <button onclick="calculateCurrentGrade()">Calculate Curent Grade</button>
+    <table id="gradetable" border="1" cellspacing="9" cellpadding="13">
+        <tr id="Homework">
+            <td> Enter Homework Grades:  </td>
+            <td> <input type="text" id="HomeworkGrades" value="60, 70" size="15"> </td>
+            <td> Homework Weight: </td>
+            <td> <input type="text" id="homeworkWeight" placeholder="Homework Weight: " value="20"> </td>
+        </tr>
+        <tr id="Classwork">
+            <td>Enter Classwork Grades: </td>
+            <td> <input type="text" id="classworkGrades" value="70, 80" size="15"> </td>
+            <td> Classwork Weight:</td>
+            <td> <input type="text" id="classworkWeight" placeholder="Classwork Weight: " value="20"> </td>
+        </tr>
+        <tr id="Tests">
+            <td> Enter Test Grades </td>
+            <td> <input type="text" id="TestGrades" value="80, 90" size="15"> </td>
+            <td>Test Weight:</td>
+            <td> <input type="text" placeholder="Test Weight: " id="testWeight" value="25"> </td>
+        </tr>
+        <tr id="Midterm">
+            <td> Enter Midterm Grade(Singular) </td>
+            <td> <input type="text" id="MidtermGrade" value="85" size="15"> </td>
+            <td>Midterm Weight:</td>
+            <td> <input type="text" placeholder="Midterm Weight: " id="MidtermWeight" value="15"> </td>
+        </tr>
+        <tr id="GradeRightNow">
+            <td>Current Grade:</td>
+            <td id="currentGrade"> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr id="Final">
+            <td> What grade do you hope to recieve? </td>
+            <td> <input type="text" placeholder="Grade Wanted:" id="Gradewanted" value="90" size="15"> </td>
+            <td> Final Weight:</td>
+            <td> <input type="text" placeholder="Final Weight:" id="finalWeight" value="20"> </td>
+        </tr>
+        <tr id="GradeOnFinalNeeded">
+            <td>  <button id="finalGradeNeeded" onclick="calculateGradeNeeded()">Calculate Grade Needed on Final </button> </td>
+            <td> Grade Needed on Final:</td>
+            <td id="GradeyouNeed"> </td>
+            <td> </td>
+        </tr>
+    </table>
+    <div id="failure"></div>
+    <div id="gradeNeeded"></div>
+
+</div>
+</body>
+</html>

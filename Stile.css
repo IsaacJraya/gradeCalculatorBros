@@ -1,0 +1,28 @@
+body {
+    font-family: "sans-serif";
+    vertical-align: top;
+    background-color: powderblue;
+    color: black;
+
+}
+#content, #gradetable{
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+}
+#currentGrade{
+    text-decoration-color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 27px;
+}
+#gradeNeeded{
+    font-size: 35px
+}
+#failure{
+    font-size: 35px;
+}
+
+
+
